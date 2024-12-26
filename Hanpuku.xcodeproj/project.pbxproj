@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D8CBF9572D1DA26E00DE6173 /* FSRS in Frameworks */ = {isa = PBXBuildFile; productRef = D8CBF9562D1DA26E00DE6173 /* FSRS */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D8CBF9252D1D8FFA00DE6173 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CBF9572D1DA26E00DE6173 /* FSRS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Hanpuku;
 			packageProductDependencies = (
+				D8CBF9562D1DA26E00DE6173 /* FSRS */,
 			);
 			productName = Hanpuku;
 			productReference = D8CBF9122D1D8FF800DE6173 /* Hanpuku.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = D8CBF9092D1D8FF800DE6173;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D8CBF9552D1DA26E00DE6173 /* XCRemoteSwiftPackageReference "swift-fsrs" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D8CBF9132D1D8FF800DE6173 /* Products */;
 			projectDirPath = "";
@@ -586,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8CBF9552D1DA26E00DE6173 /* XCRemoteSwiftPackageReference "swift-fsrs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-spaced-repetition/swift-fsrs";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8CBF9562D1DA26E00DE6173 /* FSRS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8CBF9552D1DA26E00DE6173 /* XCRemoteSwiftPackageReference "swift-fsrs" */;
+			productName = FSRS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8CBF90A2D1D8FF800DE6173 /* Project object */;
 }
