@@ -15,24 +15,29 @@ struct DecksList: View {
         NavigationView {
             VStack {
                 List {
-                    VStack {
-                        HStack {
-                            Text("Programming").bold()
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                            .foregroundStyle(.secondary)
-                        }
-                        HStack {
-                            Button("Study", systemImage: "play.fill", action: {})
-                            .buttonStyle(.bordered)
-                            .cornerRadius(10)
-
-                            Button("Add card", systemImage: "plus", action: {})
-                            .buttonStyle(.bordered)
-                            .cornerRadius(10)
+                    NavigationLink(destination: DeckDetail()) {
+                        VStack {
+                            HStack {
+                                Text("Programming")
+                                    .bold()
+                                    .font(.title2)
+                                Spacer()
+                            }
+                            HStack {
+                                Button("Study", systemImage: "play.fill", action: {})
+                                .buttonStyle(.bordered)
+                                .controlSize(.large)
+                                .cornerRadius(30)
+                                
+                                Button("Add card", systemImage: "plus", action: {})
+                                .buttonStyle(.bordered)
+                                .controlSize(.large)
+                                .cornerRadius(30)
+                            }
                         }
                     }
                 }
+                    
             }
             .navigationTitle("Decks")
         }
