@@ -24,7 +24,7 @@ struct HanpukuApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            DecksList()
         }
         .modelContainer(sharedModelContainer)
     }
