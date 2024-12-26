@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 final class Card {
-    var id: UUID
+    var id = UUID()
     var front: String
     var back: String
     
