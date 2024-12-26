@@ -12,7 +12,6 @@ import SwiftData
 struct HanpukuApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 
@@ -25,7 +24,7 @@ struct HanpukuApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
         .modelContainer(sharedModelContainer)
     }
